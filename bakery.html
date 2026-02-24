@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    .font-bakery-serif { font-family: 'Playfair Display', serif; }
+    .font-bakery-sans { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white font-bakery-sans text-stone-800">
+
+  <nav class="fixed z-50 flex items-center justify-between w-full px-12 py-6 border-b bg-white/90 backdrop-blur-sm border-stone-100">
+    <div class="text-2xl font-bold tracking-widest uppercase font-bakery-serif">The Bakery</div>
+    <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em]">
+      <a href="#" class="transition hover:text-amber-700">Our Story</a>
+      <a href="#" class="transition hover:text-amber-700">Menu</a>
+      <a href="#" class="transition hover:text-amber-700">Location</a>
+    </div>
+    <button class="bg-stone-900 text-white px-8 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-amber-800 transition">Order</button>
+  </nav>
+
+  <section class="relative flex items-center justify-center h-screen bg-fixed bg-center bg-cover" 
+           style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop');">
+    <div class="absolute inset-0 bg-stone-900/40"></div>
+    <div class="relative text-center text-white border-8 border-white/20 p-12 md:p-20 backdrop-blur-[1px]">
+      <h1 class="mb-4 text-6xl font-bold md:text-9xl font-bakery-serif">Freshly Baked</h1>
+      <p class="text-sm md:text-xl font-light tracking-[0.6em] uppercase">Handcrafted Every Day</p>
+    </div>
+  </section>
+
+  <section class="max-w-4xl px-6 py-32 mx-auto text-center bg-white">
+    <span class="text-xs font-bold tracking-widest uppercase text-amber-700">Since 2026</span>
+    <h2 class="mt-4 mb-8 text-4xl italic md:text-5xl font-bakery-serif">Taste the Tradition</h2>
+    <p class="text-lg font-light leading-relaxed text-stone-500">
+      Just like your favorite aesthetic habit trackers, we believe in the beauty of the process. 
+      From our slow-fermented sourdough to our flaky butter croissants, every item is made 
+      with patience and the finest organic ingredients.
+    </p>
+  </section>
+
+  <section class="h-[60vh] bg-fixed bg-center bg-cover" 
+           style="background-image: url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=2080&auto=format&fit=crop');">
+  </section>
+
+  <section class="py-32 bg-stone-50">
+    <div class="max-w-6xl px-6 mx-auto">
+      <div class="mb-20 text-center">
+        <h2 class="mb-4 text-5xl font-bakery-serif">On The Menu</h2>
+        <div class="w-24 h-1 mx-auto bg-amber-700"></div>
+      </div>
+      
+      <div class="grid gap-16 md:grid-cols-2 md:gap-32">
+        <div class="space-y-12">
+          <div class="flex items-end justify-between pb-4 border-b border-stone-200">
+            <div>
+              <h4 class="text-xl font-bakery-serif">Artisan Sourdough</h4>
+              <p class="mt-1 text-xs tracking-widest uppercase text-stone-400">Traditional 24h Fermentation</p>
+            </div>
+            <span class="text-xl font-bold text-stone-900">$9.00</span>
+          </div>
+          <div class="flex items-end justify-between pb-4 border-b border-stone-200">
+            <div>
+              <h4 class="text-xl font-bakery-serif">Multi-Grain Loaf</h4>
+              <p class="mt-1 text-xs tracking-widest uppercase text-stone-400">Toasted Seeds & Honey</p>
+            </div>
+            <span class="text-xl font-bold text-stone-900">$8.50</span>
+          </div>
+        </div>
+        
+        <div class="space-y-12">
+          <div class="flex items-end justify-between pb-4 border-b border-stone-200">
+            <div>
+              <h4 class="text-xl font-bakery-serif">Almond Croissant</h4>
+              <p class="mt-1 text-xs tracking-widest uppercase text-stone-400">Double Baked with Frangipane</p>
+            </div>
+            <span class="text-xl font-bold text-stone-900">$5.50</span>
+          </div>
+          <div class="flex items-end justify-between pb-4 border-b border-stone-200">
+            <div>
+              <h4 class="text-xl font-bakery-serif">Pain au Chocolat</h4>
+              <p class="mt-1 text-xs tracking-widest uppercase text-stone-400">Dark Belgian Chocolate</p>
+            </div>
+            <span class="text-xl font-bold text-stone-900">$4.75</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-16 text-center bg-stone-900 text-stone-400">
+    <div class="text-white text-xl font-bakery-serif mb-6 uppercase tracking-[0.5em]">The Bakery</div>
+    <p class="text-xs tracking-widest uppercase">123 Baker St, Bangalore | Open Daily 7am - 7pm</p>
+  </footer>
+
+
+</body>
+</html>
